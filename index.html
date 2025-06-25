@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/public/site-logo.png" />
+    <link rel="apple-touch-icon" href="/public/site-name.png" />
+
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notary</title>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Notary",
+        "applicationCategory": "Note-taking Application",
+        "operatingSystem": "Web",
+        "description": "Create, edit, organize, and archive notes in multiple languages with tag support and interactive design.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <!-- Meta Tags -->
+    <meta name="description" content="Notary is a free, interactive, and multilingual note-taking app. Create, tag, and organize notes with ease. No sign-up required — your data stays with you." />
+    <meta name="robots" content="index, follow" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Canonical -->
+    <!-- <link rel="canonical" href="https://notarynotes.vercel.app" /> -->
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Notary | Multilingual Note-Taking App" />
+    <meta property="og:description" content="Write and organize notes in your language. Pin, archive, and tag with color. Simple, free, and privacy-focused." />
+    <meta property="og:image" content="/public/site-name.png" />
+    <!-- <meta property="og:url" content="https://notarynotes.vercel.app" /> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Notary" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Notary | Multilingual Note-Taking App" />
+    <meta name="twitter:description" content="Create and manage notes with ease in English, Arabic, or Spanish. Your notes, your language, your control." />
+    <meta name="twitter:image" content="/public/site-name.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

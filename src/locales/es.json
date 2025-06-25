@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "goBack": "Atrás",
+    "goHome": "Inicio",
+    "goForward": "Adelante",
+    "archive": "Archivo"
+  },
+  "home": {
+    "heading": "¡Hola, qué tienes en mente 🧠 hoy?",
+    "create": "Crear",
+    "editTags": "Editar Etiquetas",
+    "search": "Buscar",
+    "title": "Título",
+    "tags": "Etiquetas",
+    "noPinnedNotes": "Aún no hay notas fijadas.",
+    "pinInstructions": "Puedes fijar una nota haciendo clic en el ícono 📍.",
+    "pinnedNotes": "Tus notas fijadas",
+    "noNotesFound": "No se encontraron notas",
+    "tryCreating": "Intenta crear una.",
+    "createNote": "Crear Nota",
+    "yourNotes": "Tus Notas",
+    "deleteAllNotes": "Eliminar Todas las Notas",
+    "deleteAllConfirm": "¿Eliminar todas las notas?",
+    "deleteAllDescription": "notas en la página principal, notas fijadas y notas archivadas. (Total de notas: ",
+    "deleteAll": "Eliminar Todo"
+  },
+  "common": {
+    "loading": "Cargando",
+    "notFound": "¡404 Página no encontrada!",
+    "goHome": "Inicio",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "close": "Cerrar",
+    "confirm": "Confirmar",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "previous": "Anterior"
+  },
+  "notes": {
+    "title": "Título",
+    "content": "Contenido",
+    "tags": "Etiquetas",
+    "pinned": "Fijado",
+    "archived": "Archivado",
+    "created": "Creado",
+    "updated": "Actualizado",
+    "noContent": "Sin contenido",
+    "addTag": "Agregar etiqueta",
+    "removeTag": "Quitar etiqueta",
+    "pinNote": "Fijar nota",
+    "unpinNote": "Desfijar nota",
+    "archiveNote": "Archivar nota",
+    "unarchiveNote": "Desarchivar nota",
+    "deleteNote": "Eliminar nota",
+    "editNote": "Editar nota",
+    "viewNote": "Ver nota"
+  },
+  "toast": {
+    "workspaceCleared": "Espacio de trabajo limpiado",
+    "workspaceClearedDesc": "Todas tus notas han sido eliminadas.",
+    "noteCreated": "Nota creada",
+    "noteCreatedDescription": "Nota creada con éxito. Ve a la página principal.",
+    "noteUpdated": "Nota actualizada",
+    "noteUpdatedDescription": "Tus cambios han sido guardados.",
+    "noteDeleted": "Nota eliminada",
+    "notePinned": "Nota fijada",
+    "noteUnpinned": "Nota desfijada",
+    "noteArchived": "Nota archivada",
+    "noteArchivedDescription": "Nota archivada. Puedes verla en el archivo.",
+    "noteUnarchived": "Nota desarchivada",
+    "noteUnarchivedDescription": "Nota restaurada. Ve a la página principal.",
+    "tagAdded": "Etiqueta agregada",
+    "tagRemoved": "Etiqueta removida",
+    "tagUpdated": "Etiqueta actualizada",
+    "tagDeleted": "Etiqueta eliminada"
+  },
+  "archive": {
+    "title": "Archivo",
+    "noArchivedNotes": "No hay notas archivadas",
+    "restoreNote": "Restaurar nota",
+    "permanentlyDelete": "Eliminar permanentemente",
+    "emptyArchive": "Vaciar archivo",
+    "emptyArchiveConfirm": "¿Estás seguro de que quieres eliminar permanentemente todas las notas archivadas?",
+    "emptyArchiveDescription": "Esta acción no se puede deshacer.",
+    "archiveInstruction": "Para archivar una nota, haz clic en el ícono de archivo que aparece en ella."
+  },
+  "create": {
+    "title": "Crear Nueva Nota",
+    "titlePlaceholder": "Título...",
+    "contentPlaceholder": "Escribe tus pensamientos aquí...",
+    "addTags": "Agregar etiquetas",
+    "tagPlaceholder": "Etiqueta...",
+    "createNote": "Crear Nota",
+    "saving": "Guardando...",
+    "saveNote": "Guardar Nota"
+  },
+  "edit": {
+    "title": "Editar Nota",
+    "updateNote": "Actualizar Nota",
+    "updating": "Actualizando...",
+    "deleteConfirm": "¿Estás seguro de que quieres eliminar esta nota?",
+    "deleteDescription": "Esta acción no se puede deshacer."
+  },
+  "tags": {
+    "title": "Editar Etiquetas",
+    "manageTags": "Gestionar Etiquetas",
+    "addNewTag": "Agregar Nueva Etiqueta",
+    "tagName": "Nombre de la Etiqueta",
+    "tagColor": "Color de la Etiqueta",
+    "createTag": "Crear Etiqueta",
+    "editTag": "Editar Etiqueta",
+    "deleteTag": "Eliminar Etiqueta",
+    "deleteTagConfirm": "¿Estás seguro de que quieres eliminar esta etiqueta?",
+    "deleteTagDescription": "Esto eliminará la etiqueta de todas las notas.",
+    "noTags": "Aún no se han creado etiquetas",
+    "createFirstTag": "Crea tu primera etiqueta"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "العربية",
+    "spanish": "Español",
+    "selectLanguage": "Seleccionar Idioma"
+  },
+  "footer": {
+    "developer": "Desarrollador",
+    "appName": "Aplicación Notary",
+    "allRightsReserved": "Todos los derechos reservados",
+    "builtWith": "Construido con",
+    "and": "y"
+  }
+} 

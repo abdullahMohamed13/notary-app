@@ -1,0 +1,133 @@
+{
+  "nav": {
+    "goBack": "Go Back",
+    "goHome": "Go Home",
+    "goForward": "Go Forward",
+    "archive": "Archive"
+  },
+  "home": {
+    "heading": "Hey, what's on your mind 🧠 today?",
+    "create": "Create",
+    "editTags": "Edit Tags",
+    "search": "Search",
+    "title": "Title",
+    "tags": "Tags",
+    "noPinnedNotes": "No pinned notes yet.",
+    "pinInstructions": "You can pin a note by clicking the 📍 icon.",
+    "pinnedNotes": "Your pinned notes",
+    "noNotesFound": "No notes found",
+    "tryCreating": "Try creating one.",
+    "createNote": "Create Note",
+    "yourNotes": "Your Notes",
+    "deleteAllNotes": "Delete All Notes",
+    "deleteAllConfirm": "Delete all notes?",
+    "deleteAllDescription": "Delete notes on home page, pinned notes, and archive notes. (Total Notes:",
+    "deleteAll": "Delete All"
+  },
+  "common": {
+    "loading": "Loading",
+    "notFound": "404 Not Found!",
+    "goHome": "Go Home",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  },
+  "notes": {
+    "title": "Title",
+    "content": "Content",
+    "tags": "Tags",
+    "pinned": "Pinned",
+    "archived": "Archived",
+    "created": "Created",
+    "updated": "Updated",
+    "noContent": "No content",
+    "addTag": "Add tag",
+    "removeTag": "Remove tag",
+    "pinNote": "Pin note",
+    "unpinNote": "Unpin note",
+    "archiveNote": "Archive note",
+    "unarchiveNote": "Unarchive note",
+    "deleteNote": "Delete note",
+    "editNote": "Edit note",
+    "viewNote": "View note"
+  },
+  "toast": {
+    "workspaceCleared": "Workspace cleared",
+    "workspaceClearedDesc": "All your notes have been deleted.",
+    "noteCreated": "Note created",
+    "noteCreatedDescription": "Note created successfully. Check the Home page.",
+    "noteUpdated": "Note updated",
+    "noteUpdatedDescription": "Your changes have been saved.",
+    "noteDeleted": "Note deleted",
+    "notePinned": "Note pinned",
+    "noteUnpinned": "Note unpinned",
+    "noteArchived": "Note archived",
+    "noteArchivedDescription": "Note archived. You can find it in the Archive.",
+    "noteUnarchivedDescription": "Note restored. Check the Home page.",
+    "noteUnarchived": "Note unarchived",
+    "tagAdded": "Tag added",
+    "tagRemoved": "Tag removed",
+    "tagUpdated": "Tag updated",
+    "tagDeleted": "Tag deleted"
+  },
+  "archive": {
+    "title": "Archive",
+    "noArchivedNotes": "No archived notes",
+    "restoreNote": "Restore note",
+    "permanentlyDelete": "Permanently delete",
+    "emptyArchive": "Empty archive",
+    "emptyArchiveConfirm": "Are you sure you want to permanently delete all archived notes?",
+    "emptyArchiveDescription": "This action cannot be undone.",
+    "archiveInstruction": "To archive a note, just click the archive icon on it."
+  },
+  "create": {
+    "title": "Create New Note",
+    "titlePlaceholder": "Enter note title...",
+    "contentPlaceholder": "Write your thoughts here...",
+    "addTags": "Add tags",
+    "tagPlaceholder": "Enter tag name...",
+    "createNote": "Create Note",
+    "saving": "Saving...",
+    "saveNote": "Save Note"
+  },
+  "edit": {
+    "title": "Edit Note",
+    "updateNote": "Update Note",
+    "updating": "Updating...",
+    "deleteConfirm": "Are you sure you want to delete this note?",
+    "deleteDescription": "This action cannot be undone."
+  },
+  "tags": {
+    "title": "Edit Tags",
+    "manageTags": "Manage Tags",
+    "addNewTag": "Add New Tag",
+    "tagName": "Tag Name",
+    "tagColor": "Tag Color",
+    "createTag": "Create Tag",
+    "editTag": "Edit Tag",
+    "deleteTag": "Delete Tag",
+    "deleteTagConfirm": "Are you sure you want to delete this tag?",
+    "deleteTagDescription": "This will remove the tag from all notes.",
+    "noTags": "No tags created yet",
+    "createFirstTag": "Create your first tag"
+  },
+  "language": {
+    "english": "English",
+    "arabic": "العربية",
+    "spanish": "Español",
+    "selectLanguage": "Select Language"
+  },
+  "footer": {
+    "developer": "Dev",
+    "appName": "Notary App",
+    "allRightsReserved": "All rights reserved",
+    "builtWith": "Built with",
+    "and": "and"
+  }
+} 
