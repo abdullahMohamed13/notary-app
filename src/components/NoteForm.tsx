@@ -50,7 +50,11 @@ type NoteDataProps = {
 }
 
 export default function NoteForm({ onSubmit, title = "", body = "", tags = [], isEditing = false }: NoteDataProps) {
-  const { setNotes, tags: availableTags, setTags } = useContext(NoteContext)
+
+  const noteContext = useContext(NoteContext)
+  if(!noteContext) return null
+  const { setNotes, tags: availableTags, setTags } = noteContext
+  
   const { t } = useLanguage();
 
   const titleRef = useRef<HTMLInputElement>(null)

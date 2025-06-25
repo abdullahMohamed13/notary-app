@@ -21,10 +21,12 @@ type Props = {
 
 export default function Note({ note }: Props) {
 
-  const {setNotes} = useContext(NoteContext)
+  const noteContext = useContext(NoteContext);
+  if (!noteContext) return null;
+
+  const {setNotes} = noteContext;
   const { t, language } = useLanguage();
 
-  // Get the appropriate locale for date formatting
   const getLocale = () => {
     switch (language) {
       case 'ar':
