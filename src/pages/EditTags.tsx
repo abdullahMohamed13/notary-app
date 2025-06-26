@@ -12,9 +12,14 @@ import { FaTrash} from "react-icons/fa";
 import NoteContext from "@/context/NoteContext"
 import { useLanguage } from '@/context/LanguageContext';
 import EmptyState from "@/components/EmptyState"
+// Types
+import type { Tag } from '../types/note';
 
 export default function EditTags() {
-  const { tags, setTags } = useContext(NoteContext)
+  const noteContext = useContext(NoteContext)
+  if (!noteContext) return null
+  const { tags, setTags } = noteContext
+
   const { t } = useLanguage();
 
   const handleChange = (id: string, field: keyof Tag, value: string) => {
@@ -43,10 +48,7 @@ export default function EditTags() {
           <Input type="color" value={tag.color || "#cccccc"} onChange={e => handleChange(tag.id, "color", e.target.value)}
             className="w-[40px] h-[40px] p-1" title={t('tags.tagColor')}/>
           <Badge style={{ backgroundColor: tag.color }} className="text-foreground">{tag.label}</Badge>
-          <Button variant="destructive" onClick={() => {
-            deleteTag(tag.id);
-            deleteTag(tag.color);
-          }} className="bg-secondary hover:bg-destructive"
+          <Button variant="destructive" onClick={() => deleteTag(tag.id)} className="bg-secondary hover:bg-destructive"
             title={t('tags.deleteTag')}>
             <FaTrash />
           </Button>

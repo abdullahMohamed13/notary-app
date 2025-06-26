@@ -9,8 +9,11 @@ import { Button } from "@/components/ui/button"
 import { useNavigate } from "react-router-dom"
 
 export default function Archive() {
+  const noteContext = useContext(NoteContext)
+  if (!noteContext) return null
+  const { notesWithTags } = noteContext
+  
   const navigate = useNavigate()
-  const { notesWithTags } = useContext(NoteContext)
   const { t } = useLanguage();
   const archivedNotes = notesWithTags.filter(note => note.archived)
   return <>

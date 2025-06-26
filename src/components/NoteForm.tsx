@@ -9,7 +9,7 @@ import { Button } from "./ui/button"
 import { toast } from "sonner"
 // Libraries
 import CreatableReactSelect from 'react-select/creatable'
-import { components } from 'react-select'
+import { components, type MultiValueProps } from 'react-select'
 import { FaSave, FaTimes, FaStickyNote } from "react-icons/fa";
 import { v4 as uuid } from 'uuid';
 // Types
@@ -17,8 +17,10 @@ import type { Tag, NoteData, RawNote } from "@/types/note"
 import { useRef, useState, useContext, useEffect, type FormEvent } from "react"
 import { useLanguage } from '@/context/LanguageContext';
 
+// I will send you the EditTags.tsx, Archive.tsx,
+// and EditNotes.tsx after you finish finding and solving these problems
 // Fade/slide animation for (CreatableReactSelect's) tags
-const AnimatedMultiValue = (props) => {
+const AnimatedMultiValue = (props: MultiValueProps<{ label: string; value: string }, true>) => {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -124,7 +126,7 @@ export default function NoteForm({ onSubmit, title = "", body = "", tags = [], i
                     control: (base, state) => ({
                       ...base,
                       // backgroundColor: 'calc(var(--input) / 30 )',
-                      borderColor: state.isFocused && 'var(--primary)',
+                      borderColor: state.isFocused ? 'var(--primary)' : base.borderColor,
                       boxShadow: state.isFocused ? '0 0 6px 1.7px var(--primary)' : 'none',
                       minHeight: '36px',
                       fontSize: '14px',

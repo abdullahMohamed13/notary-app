@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import type { ReactNode } from 'react';
 import en from '../locales/en.json';
 import ar from '../locales/ar.json';
 import es from '../locales/es.json';
@@ -57,7 +58,7 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
         value = value[k];
       } else {
         // Fallback to English if translation not found
-        value = keys.reduce((obj, k) => obj?.[k], translations.en) || key;
+        value = keys.reduce((obj, k) => (obj as any)?.[k], translations.en);
         break;
       }
     }

@@ -89,7 +89,7 @@ export default function Note({ note }: Props) {
       <Link to={`/${note.id}`}>
         <CardContent className="cursor-pointer">
           <div>{note.body}</div>
-          {note.tags?.length > 0 && (
+          {note.tags && note.tags?.length > 0 && (
             <div className="flex flex-wrap gap-1 mt-2">
               {note.tags.map(tag => (
                 <Badge key={tag.id} variant="outline" className="text-xs text-white"

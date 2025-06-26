@@ -14,8 +14,12 @@ import NoteContext from "@/context/NoteContext"
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function Show() {
+  const noteContext = useContext(NoteContext)
+  if (!noteContext) return null
+  const { notesWithTags } = noteContext
+  
   const { id } = useParams()
-  const { notesWithTags } = useContext(NoteContext)
+
   const { t } = useLanguage();
   const navigate = useNavigate()
 
@@ -28,9 +32,9 @@ export default function Show() {
     <div className="note-details break-words border p-4 rounded-md max-w-2xl mx-auto bg-card text-card-foreground">
       <h2 className="text-2xl font-bold mb-2">{note.title}</h2>
       <p className="mb-4">{note.body}</p>
-      {note.tags?.length > 0 && (
+      {(note.tags ?? []).length > 0 && (
         <div className="flex flex-wrap gap-1 mb-3">
-          {note.tags.map(tag => (
+          {note.tags!.map(tag => (
             <Badge key={tag.id} style={{backgroundColor: tag.color}}>{tag.label}</Badge>
           ))}
         </div>

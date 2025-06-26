@@ -10,19 +10,26 @@ import { useLanguage } from '@/context/LanguageContext';
 // const noteToEdit = notes.find(note => note.id.toString() === id)
 
 export default function EditNotes() {
+  const noteContext = useContext(NoteContext)
+  if (!noteContext) return null
+  const { notesWithTags, setNotes } = noteContext
+
   const { id } = useParams()
-  const navigate = useNavigate()
-  const { t } = useLanguage();
-  const { notesWithTags, setNotes } = useContext(NoteContext)
   const noteToEdit = notesWithTags.find(note => note.id.toString() === id)
 
+  const navigate = useNavigate()
+  const { t } = useLanguage();
 
   function onSubmit(updatedData: NoteData) {
     setNotes(prev =>
       prev.map(note =>
-        note.id.toString() === id ?
-          { ...note, title: updatedData.title, body: updatedData.body, tagIds: updatedData.tags.map(tag => tag.id),
-          }
+        note.id.toString() === id
+          ? {
+              ...note,
+              title: updatedData.title,
+              body: updatedData.body,
+              tagIds: (updatedData.tags ?? []).map(tag => tag.id), // ← fallback added here
+            }
           : note
       )
     )

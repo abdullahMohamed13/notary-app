@@ -20,7 +20,9 @@ import EmptyState from '@/components/EmptyState';
 export default function Home() {
     const navigate = useNavigate()
 
-    const { notesWithTags, notes, setNotes } = useContext(NoteContext)
+    const noteContext = useContext(NoteContext)
+    if(!noteContext) return null
+    const { notesWithTags, notes, setNotes } = noteContext
     const { t } = useLanguage();
     const pinnedNotes = notesWithTags.filter(note => note.pinned && !note.archived)
 
