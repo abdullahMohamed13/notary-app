@@ -92,7 +92,7 @@ export default function Note({ note }: Props) {
           {note.tags && note.tags?.length > 0 && (
             <div className="flex flex-wrap gap-1 mt-2">
               {note.tags.map(tag => (
-                <Badge key={tag.id} variant="outline" className="text-xs text-white"
+                <Badge key={tag.id} variant="outline" className="text-xs text-foreground"
                   style={{ backgroundColor: tag.color || "transparent" }}>
                   {tag.label}
                 </Badge>
