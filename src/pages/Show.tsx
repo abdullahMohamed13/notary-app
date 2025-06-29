@@ -12,6 +12,7 @@ import { FaArrowLeft } from "react-icons/fa"
 // context
 import NoteContext from "@/context/NoteContext"
 import { useLanguage } from '@/context/LanguageContext';
+import { enUS, ar, es } from "date-fns/locale"
 
 export default function Show() {
   const noteContext = useContext(NoteContext)
@@ -19,8 +20,19 @@ export default function Show() {
   const { notesWithTags } = noteContext
   
   const { id } = useParams()
+  
+  const { t, language } = useLanguage();
+  const getLocale = () => {
+    switch (language) {
+      case 'ar':
+        return ar;
+      case 'es':
+        return es;
+      default:
+        return enUS;
+    }
+  };
 
-  const { t } = useLanguage();
   const navigate = useNavigate()
 
   const note = notesWithTags.find(note => note.id.toString() === id)
@@ -40,8 +52,12 @@ export default function Show() {
         </div>
       )}
       <p className="text-sm text-muted-foreground">
-        {t('notes.created')}: {formatDistanceToNow(new Date(note.createdAt), { addSuffix: true })}
+        {t('notes.created')}: {formatDistanceToNow(new Date(note.createdAt), { 
+            addSuffix: true,
+            locale: getLocale()
+        })}
       </p>
+                
       <div className="mt-4 flex gap-3">
         <Link to={`/edit/${note.id}`}>
           <Button title={t('notes.editNote')}>{t('notes.editNote')}</Button>
